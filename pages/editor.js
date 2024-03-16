@@ -67,13 +67,18 @@ export default function Editor({ sectionTemplates }) {
       </Head>
 
       <Nav
+        sectionTemplates={sectionTemplates}
         selectedSectionSlugs={selectedSectionSlugs}
+        setSelectedSectionSlugs={setSelectedSectionSlugs}
+        setSectionSlugs={setSectionSlugs}
         setShowModal={setShowModal}
+        setTemplates={setTemplates}
         getTemplate={getTemplate}
         onMenuClick={() => toggleDrawer(!showDrawer)}
         isDrawerOpen={showDrawer}
         darkMode={darkMode}
         setDarkMode={setDarkMode}
+        templates={templates}
         focusedSectionSlug={focusedSectionSlug}
       />
       {showModal && <DownloadModal setShowModal={setShowModal} />}

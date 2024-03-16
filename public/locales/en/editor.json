@@ -1,7 +1,9 @@
 {
   "editor-desktop-optimized": "This site is optimized for desktop",
   "editor-visit-desktop": "Please visit readme.so on a desktop to create your readme!",
-  "nav-download": "Download",
+  "nav-download": "Download Markdown",
+  "nav-export": "Export JSON",
+  "nav-import": "Import JSON",
   "download-readme-generated": "Readme Generated!",
   "download-reach-out": "Thanks for using readme.so! Feel free to reach out to me on",
   "download-feedback": "with any feedback.",
