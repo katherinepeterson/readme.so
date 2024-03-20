@@ -1,28 +1,33 @@
 import { useState, useEffect } from 'react'
 
-const isBrowser = typeof window !== 'undefined'
-
 export default function useDarkMode() {
-  // Define the localstorage key
-  const storageName = 'color-theme'
-  // Get value from localstorage by key
-  const storageTheme = isBrowser ? window.localStorage.getItem(storageName) : 'light'
+  // Define constants
+  const STROAGE_NAME = 'color-theme'
+  const DARK_THEME_CLASS_NAME = 'dark'
+  const LIGHT_THEME_CLASS_NAME = 'light'
+  const DEFAULT_THEME_CLASS_NAME = LIGHT_THEME_CLASS_NAME
 
-  const [enabled, setEnabled] = useState(storageTheme === 'dark')
+  // Create state
+  const [isEnabled, setIsEnabled] = useState(DEFAULT_THEME_CLASS_NAME)
 
-  // Fire off effect that add/removes dark mode class
+  // Once page gets rendered, get theme from stroage
   useEffect(() => {
-    const className = 'dark'
-    const element = window.document.documentElement
-    if (enabled) {
-      localStorage.setItem(storageName, 'dark')
-      element.classList.add(className)
-    } else {
-      localStorage.setItem(storageName, 'light')
-      element.classList.remove(className)
-    }
-  }, [enabled])
+    const themeFromStroage = window.localStorage.getItem(STROAGE_NAME)
+    setIsEnabled(themeFromStroage === DARK_THEME_CLASS_NAME)
+  }, [])
 
-  // Return enabled state and setter
-  return [enabled, setEnabled]
+  // Fire off an effect that adds/removes dark mode class and handles local stroage
+  useEffect(() => {
+    const element = window.document.documentElement
+    if (isEnabled) {
+      localStorage.setItem(STROAGE_NAME, DARK_THEME_CLASS_NAME)
+      element.classList.add(DARK_THEME_CLASS_NAME)
+    } else {
+      localStorage.setItem(STROAGE_NAME, LIGHT_THEME_CLASS_NAME)
+      element.classList.remove(DARK_THEME_CLASS_NAME)
+    }
+  }, [isEnabled])
+
+  // Return isEnabled state and setter
+  return [isEnabled, setIsEnabled]
 }

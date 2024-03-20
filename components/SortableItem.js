@@ -49,7 +49,7 @@ export function SortableItem(props) {
         className="mr-1 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-400"
         {...listeners}
       >
-        <img className="w-5 h-5" src="drag.svg" />
+        <img className="w-5 h-5" src="/drag.svg" />
       </button>
       <p>{props.section.name}</p>
       {props.section.slug === props.focusedSectionSlug && (
@@ -60,7 +60,7 @@ export function SortableItem(props) {
             aria-label="Reset section"
             onClick={onClickReset}
           >
-            <img className="w-auto h-5" src="reset.svg" alt="reset-icon" />
+            <img className="w-auto h-5" src="/reset.svg" alt="reset-icon" />
           </button>
           <button
             className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-400 absolute right-2"
@@ -68,7 +68,7 @@ export function SortableItem(props) {
             aria-label="Delete section"
             onClick={onClickTrash}
           >
-            <img className="w-auto h-5" src="trash.svg" alt="trash-icon" />
+            <img className="w-auto h-5" src="/trash.svg" alt="trash-icon" />
           </button>
         </>
       )}

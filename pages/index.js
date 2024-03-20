@@ -89,9 +89,8 @@ const Home = () => {
                 <Link href="/">
                   <img
                     className="w-auto h-12 cursor-pointer"
-                    src="readme.svg"
+                    src="/readme.svg"
                     alt="readme.so logo"
-                    // style={{ height: '3rem' }}
                   />
                 </Link>
 
@@ -178,7 +177,7 @@ const Home = () => {
                 rel="noopener noreferrer"
                 aria-label="github logo"
               >
-                <img className="w-auto h-6" src="github.svg" alt="github logo" />
+                <img className="w-auto h-6" src="/github.svg" alt="github logo" />
               </a>
             </div>
           </div>
