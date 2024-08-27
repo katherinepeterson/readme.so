@@ -74,6 +74,10 @@ export const languageSupports = [
     route: '/cn',
   },
   {
+    label: 'Български',
+    route: '/bg',
+  },
+  {
     label: 'Русский',
     route: '/ru',
   },
