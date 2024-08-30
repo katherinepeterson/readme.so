@@ -81,6 +81,7 @@ const EditPreviewContainer = ({
             selectedSectionSlugs={selectedSectionSlugs}
             getTemplate={getTemplate}
             selectedTab={selectedTab}
+            darkMode={darkMode}
           />
         </div>
       ) : null}
