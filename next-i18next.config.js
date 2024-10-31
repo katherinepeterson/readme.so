@@ -21,6 +21,7 @@ module.exports = {
       'cn',
       'ru',
       'uz',
+      'uk',
     ],
   },
 }

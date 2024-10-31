@@ -81,6 +81,10 @@ export const languageSupports = [
     label: "O'zbekcha",
     route: '/uz',
   },
+  {
+    label: "Українська",
+    route: '/uk',
+  },
 ]
 
 export function LanguageDropDown({ posts }) {

@@ -1,0 +1,18 @@
+{
+  "editor-desktop-optimized": "Цей сайт оптимізовано для роботи за комп'ютером",
+  "editor-visit-desktop": "Будь ласка, відвідайте readme.so на комп'ютері, щоб створити свій readme!",
+  "nav-download": "Завантажити",
+  "download-readme-generated": "Readme згенеровано!",
+  "download-reach-out": "Дякуємо за використання readme.so! Не соромтеся звертатися до мене в",
+  "download-feedback": "з будь-якими відгуками.",
+  "download-coffee": "Якщо ви вважаєте цей продукт корисним, підтримайте мене!",
+  "editor-column-editor": "Редактор",
+  "editor-select": "Виберіть розділ на лівій бічній панелі, щоб редагувати вміст",
+  "preview-column-preview": "Попередній перегляд",
+  "preview-column-raw": "Перегляд початкового коду",
+  "section-column-section": "Розділи",
+  "section-column-click-edit": "Натисніть на розділ нижче, щоб відредагувати вміст",
+  "section-column-click-add": "Натисніть на розділ нижче, щоб додати його до вашого readme",
+  "section-column-click-reset": "Скинути",
+  "custom-section": "Користувацький розділ"
+}
